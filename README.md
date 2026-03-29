@@ -1,13 +1,13 @@
 
-\<div align="center"\>
-\<h1 align="center"\>
+<div align="center"\>
+<h1 align="center"\>
 Face-Recognition-System🧠👁️\</h1\>
-\<h3\>نظام متقدم للتعرف على الوجوه الحيوية بالزمن الفعلي\</h3\>
-\</div\>
+<h3\>نظام متقدم للتعرف على الوجوه الحيوية بالزمن الفعلي\</h3\>
+<div\>
 
-\<p align="center"\>
+<p align="center"\>
 مشروع متكامل يجمع بين قوة الذكاء الاصطناعي (Deep Learning) وتصميم واجهات المستخدم المستقبلية (Sci-Fi HUD) للتعرف على الوجوه والتحقق من الهوية بشكل فوري ومذهل بصرياً.
-\</p\>
+<p\>
 
 -----
 
@@ -63,15 +63,15 @@ pip install -r requirements.txt
 شغل `main_app.py` لفتح الواجهة السايبرية والبدء في عملية التعرف الحية.
 
 -----
-\<div align="center"\>
-\<h1 align="center"\>
+<div align="center"\>
+<h1 align="center"\>
 Face-Recognition-System🧠👁️\</h1\>
-\<h3\>Advanced Real-Time Biometric Face Recognition System\</h3\>
-\</div\>
+<h3\>Advanced Real-Time Biometric Face Recognition System\</h3\>
+<div\>
 
-\<p align="center"\>
+<p align="center"\>
 An integrated project combining the power of Deep Learning with futuristic Sci-Fi HUD design for instant and visually stunning facial recognition and identity verification.
-\</p\>
+</p\>
 
 -----
 
