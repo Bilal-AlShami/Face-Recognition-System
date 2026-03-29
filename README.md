@@ -1,5 +1,3 @@
-
-
 <div align="center">
 
 <h1 align="center">
@@ -8,15 +6,12 @@
 <h3>نظام متقدم للتعرف على الوجوه الحيوية بالزمن الفعلي</h3>
 
 </div>
-
 <p align="center">
 
 مشروع متكامل يجمع بين قوة الذكاء الاصطناعي (Deep Learning) وتصميم واجهات المستخدم المستقبلية (Sci-Fi HUD) للتعرف على الوجوه والتحقق من الهوية بشكل فوري ومذهل بصرياً.
 
 </p>
-
 ---
-
 ## 📖 نظرة عامة ومواصفات المشروع
 
 هذا المشروع عبارة عن نظام أمني وتعريفي يعتمد على رؤية الحاسب (Computer Vision) والشبكات العصبية العميقة. يقوم النظام باكتشاف الوجوه عبر كاميرا الويب، وتحويل ملامح الوجه إلى أرقام أو بصمات رياضية (Embeddings) باستخدام بنية **EfficientNetV2M**، ثم يقارنها بالأشخاص المعرفين مسبقاً في قاعدة الحسابات لمنح أو رفض الدخول.
@@ -46,9 +41,9 @@
 
 1. **`taking_photos.py`:** سكربت جمع البيانات؛ يلتقط 2500 صورة لوجه المستخدم ويحفظها في مجلد `dataset/`.
     
-2. **`model.py`:** سكربت التدريب المحلي لإنتاج نموذج `my_face_model.keras`.
+2. **`local_model_trining.py`:** سكربت التدريب المحلي لإنتاج نموذج `my_face_model.keras`.
     
-3. **`generate_all_embeddings.py`:** المحرك الذي يحول الصور إلى ملفات بصمة رقمية `.npy`.
+3. **`embeddings.py`:** المحرك الذي يحول الصور إلى ملفات بصمة رقمية `.npy`.
     
 4. **`main_app.py`:** قلب المشروع؛ الواجهة الرسومية التي تدير الكاميرا الحية وعملية المطابقة.
     
@@ -56,14 +51,11 @@
     
 
 ---
-
 ## 🚀 دليل التشغيل الشامل (Step-by-Step)
 
 ### الخطوة 1: إعداد بيئة العمل
 
 قم بتثبيت المكتبات اللازمة عبر موجه الأوامر:
-
-
 
 ```
 pip install -r requirements.txt
@@ -75,7 +67,7 @@ pip install -r requirements.txt
 
 ### الخطوة 3: تدريب الموديل والترميز الرقمي
 
-بعد جمع الصور، قم بتدريب الموديل (أو استخدم الموديل الجاهز)، ثم قم بتشغيل سكربت توليد البصمات:
+بعد جمع الصور، قم بتدريب الموديل ثم قم بتشغيل سكربت توليد البصمات:
 
 
 
@@ -139,7 +131,7 @@ This project is a security and identification system based on Computer Vision an
 
 1. **`taking_photos.py`:** Data collection script; captures 2500 images per person.
     
-2. **`model.py`:** Local training script for creating the `.keras` model.
+2. **`local_model_trining.py`:** Local training script for creating the `.keras` model.
     
 3. **`generate_all_embeddings.py`:** The engine that transforms images into `.npy` biometric fingerprints.
     
