@@ -1,99 +1,135 @@
-<div align="center">
-  <h1 align="center">Face-Recognition-System 🧠👁️</h1>
-  <h3>نظام متقدم للتعرف على الوجوه الحيوية بالزمن الفعلي</h3>
-</div>
 
-<p align="center">
-  مشروع متكامل يجمع بين قوة الذكاء الاصطناعي (Deep Learning) وتصميم واجهات المستخدم المستقبلية (Sci-Fi HUD) للتعرف على الوجوه والتحقق من الهوية بشكل فوري ومذهل بصرياً.
-</p>
+<div align="center"\>
+<h1 align="center"\>Face-Recognition-System 🧠👁️\</h1\>
+<h3\>نظام متقدم للتعرف على الوجوه الحيوية بالزمن الفعلي\</h3\>
+</div\>
 
----
+\<p align="center"\>
+مشروع متكامل يجمع بين قوة الذكاء الاصطناعي (Deep Learning) وتصميم واجهات المستخدم المستقبلية (Sci-Fi HUD) للتعرف على الوجوه والتحقق من الهوية بشكل فوري ومذهل بصرياً.
+\</p\>
 
-## 📖 نظرة عامة على المشروع (Overview)
-هذا المشروع عبارة عن نظام أمني وتعريفي يعتمد على رؤية الحاسب (Computer Vision) للتعرف على الأشخاص من خلال ملامح الوجه. يقوم النظام برصد الوجوه عبر الكاميرا، وتحويل ملامح الوجه إلى أرقام أو بصمات رياضية (Embeddings) באמצעות شبكات عصبية عميقة (EfficientNetV2M)، ثم يقارنها بالأشخاص المعرفين مسبقاً في قاعدة البيانات لمنح أو رفض صلاحية الدخول.
+-----
 
-ما يميز المشروع هو **واجهة المستخدم التفاعلية (HUD)** المصممة بطابع الفضاء الإلكتروني (Cyberpunk)، والتي تقدم تجربة بصرية فريدة أثناء معالجة البيانات، بالإضافة لتوفيره مسارين للذكاء الاصطناعي باستخدام (TensorFlow) و (PyTorch).
+## 📖 نظرة عامة ومواصفات المشروع
 
----
+هذا المشروع عبارة عن نظام أمني وتعريفي يعتمد على رؤية الحاسب (Computer Vision) والشبكات العصبية العميقة. يقوم النظام باكتشاف الوجوه عبر كاميرا الويب، وتحويل ملامح الوجه إلى أرقام أو بصمات رياضية (Embeddings) باستخدام بنية **EfficientNetV2M**، ثم يقارنها بالأشخاص المعرفين مسبقاً في قاعدة الحسابات لمنح أو رفض الدخول.
 
-## 🌟 المميزات التقنية والبصرية (Features)
+**أبرز المواصفات التقنية:**
 
-### 1️⃣ قدرات الذكاء الاصطناعي الأساسية
-*   **التعرف الفوري على الوجوه (Real-Time Recognition):** معالجة سريعة لإطارات الفيديو باستخدام نموذج `EfficientNetV2M` المطور بدقة عالية.
-*   **اكتشاف الوجه (Face Detection):** باستخدام مصنفات Haar Cascade الخفيفة لقص الوجه بدقة قبل تمريره لنموذج التعرف.
-*   **نظام المقارنة الدقيق (Cosine Similarity):** يقيس المسافة بين بصمة الوجه المباشر وبصمات الوجوه المحفوظة لتحديد نسبة التطابق (Confidence Score).
-*   **مقارنة النماذج (Models Competition):** يحتوي المشروع على تجارب تدريب باستخدام كلا من `TensorFlow/Keras` و `PyTorch` لمعرفة أيهما يقدم أداءً أفضل (مرفق بحث دراسي PDF حول هذا التنافس).
+  * **التعرف الفوري على الوجوه (Real-Time Recognition):** معالجة فائقة السرعة لإطارات الفيديو باستخدام نموذج `PyTorch` (`best_model.pth`).
+  * **اكتشاف الوجه (Face Detection):** باستخدام مصنفات Haar Cascade لاقتطاع الوجه المستهدف.
+  * **تحليل وتوليد البصمة الحيوية:** باستخدام `TensorFlow / Keras` لتحويل آلاف الصور إلى متجهات دقيقة (Vectors).
+  * **واجهة مستخدم تفاعلية (Cyberpunk HUD):** مبنية بـ `PyQt6` وتتضمن تأثيرات بصرية متقدمة مثل الشبكة الحيوية ومحاكاة الجسيمات.
 
-### 2️⃣ واجهة القيادة المستقبلية (Neural Nexus Dashboard)
-تم بناء الواجهة باستخدام مكتبة `PyQt6` وتتضمن تأثيرات بصرية (VFX) مبرمجة برمجياً من الصفر:
-*   **الشبكة الحيوية (Biometric Grid):** شبكة رسومية تتفاعل وتحدد أبعاد الوجه.
-*   **الجسيمات التفاعلية (Particles & Ripples):** تتجمع الجسيمات البصرية حول الوجه كمؤشر على بدء سحب البيانات الحيوية، مع ظهور موجات (Ripples) عند التقاط الإشارة.
-*   **البطاقة التعريفية (ID Card):** لوحة تظهر بجوار الوجه تعرض حالة التصريح (مصرح/مرفوض)، ونسبة المزامنة.
-*   **شاشة الأوامر الحية (Live Terminal):** يوثق الحدث بشكل لحظي ويعرض رسائل النظام الجارية للمستخدم.
+-----
 
----
+## 📂 بنية المشروع ووظيفة كل ملف
 
-## 🛠️ التقنيات والمكتبات المستخدمة (Tech Stack)
+لكي تفهم أين تبدأ وأين تنتهي، هذه نبذة عن الملفات الأساسية بترتيب الأهمية العملياتية:
 
-*   **لغة البرمجة الأساسية:** Python 3.12+
-*   **مكتبات الذكاء الاصطناعي:**
-    *   `TensorFlow` & `Keras`: لبناء، تدريب، واستخراج الـ Embeddings.
-    *   `PyTorch` & `torchvision`: لتشغيل نموذج التحقق المباشر في الواجهة.
-*   **رؤية الحاسب ومعالجة الصور:** `OpenCV (cv2)` و `NumPy`.
-*   **واجهة المستخدم (GUI):** `PyQt6`.
+1.  **`taking_photos.py` (نقطة البداية):** السكربت الخاص بجمع البيانات (التقاط 2500 صورة).
+2.  **`model.py` (التدريب المحلي):** تدريب الشبكة العصبية لإنتاج نموذج `my_face_model.keras`.
+3.  **`colab_training_code.py`:** بدائل للتدريب السحابي باستخدام Google Colab.
+4.  **`generate_all_embeddings.py` (التشفير الرقمي):** يحول صور كل شخص إلى ملف بصمة رقمية `.npy`.
+5.  **`main_app.py` (نقطة النهاية):** الواجهة الرسومية التي تشغل الكاميرا الحية لتأكيد الهوية.
 
----
+-----
 
-## 📂 هيكل المشروع ووظيفة كل ملف (Project Structure)
+## 🚀 المسار الكامل للتشغيل (دليل الخطوات)
 
-| الملف / المجلد | الوظيفة والأهمية |
-| :--- | :--- |
-| **`الواجهه.py`** | **قلب المشروع:** الواجهة الرسومية الرئيسية (NEURAL NEXUS) والتطبيق الحي لكاميرا التعرف على الوجوه والمؤثرات البصرية. |
-| **`التقاط الصور.py`** | أداة لجمع البيانات: تقوم بفتح الكاميرا والتقاط 2500 صورة لوجه شخص محدد وحفظها في مجلد `dataset`. |
-| **`generate_all_embeddings.py`**| أداة استخراج البصمات المقاسة بهندسة الـ Tensors: تمر على صور الأشخاص وتولد ملف بصمة `.npy` لكل شخص باستخدام نموذج `Keras`. |
-| **`model.py`** | سكربت بناء نموذج الشبكات العصبية باستخدام TensorFlow لتدريب الموديل على الوجوه المسجلة بأسلوب Data Augmentation. |
-| **`colab_training_code.py`** | كود مهيأ ليتم تشغيله على Google Colab بغرض استخدام الـ GPUs المجانية لتدريب النماذج ومقارنتها. |
-| `best_model.pth` | أوزان نموذج PyTorch المدرب للتعرف على الوجوه (مستخدم داخل الواجهة). |
-| `my_face_model.keras` | أوزان نموذج TensorFlow/Keras للتعرف على الوجوه وإنشاء البصمات. |
-| **`embeddings/`** | مجلد قواعد البيانات الذي يخزن بصمات الوجوه الرياضية (المشفرة) الجاهزة للمطابقة السريعة. |
-| **`dataset/`** | مجلد مخصص لتخزين الصور الخام المستخدمة أثناء عملية الجمع والتدريب. |
+### الخطوة 1: إعداد بيئة العمل
 
----
+تثبيت المكتبات اللازمة عبر الأمر:
 
-## 🚀 دليل التشغيل الشامل (Step-by-Step Guide)
-
-### الخطوة 1: تثبيت المتطلبات (Prerequisites)
-تأكد من تواجد Python على جهازك، ثم قم بتثبيت المكتبات المطلوبة بفتح موجه الأوامر وكتابة:
 ```bash
-pip install torch torchvision tensorflow opencv-python numpy PyQt6
+pip install -r requirements.txt
 ```
 
-### الخطوة 2: إضافة شخص جديد لقاعدة البيانات (Enrollment)
-إذا كنت ترغب بإضافة وجهك للنظام للتعرف عليه:
-1. قم بتشغيل سكربت التقاط الصور:
-   ```bash
-   python "التقاط الصور.py"
-   ```
-2. سيُطلب منك إدخال اسمك (باللغة الإنجليزية).
-3. ستفتح الكاميرا، وسيبدأ النظام بالتقاط 2500 صورة لوجهك. حاول تغيير تعابير وجهك وتحريك رأسك يميناً ويساراً ببطء لضمان جودة التدريب والتعرف.
+### الخطوة 2: تسجيل الوجوه (تجميع البيانات)
 
-### الخطوة 3: توليد البصمة الحيوية (Generate Embeddings)
-بعد التقاط الصور، يجب تحويل هذه الصور إلى أرقام (بصمة وجه) ليتعرف عليها النظام:
+قم بتشغيل `taking_photos.py` لإدخال اسمك والتقاط صور وجهك (2500 صورة). تحرك ببطء وغير تعابير وجهك لضمان الدقة.
+
+### الخطوة 3: تدريب الموديل
+
+استخدم `model.py` للتدريب المحلي أو ملفات Colab المرفقة للتدريب السحابي للحصول على أوزان النموذج.
+
+### الخطوة 4: توليد البصمات الحيوية
+
+قم بتشغيل `generate_all_embeddings.py` لتحويل الصور إلى بيانات رياضية (Embeddings) مخزنة في مجلد `embeddings/`.
+
+### الخطوة 5: التشغيل النهائي
+
+شغل `main_app.py` لفتح الواجهة السايبرية والبدء في عملية التعرف الحية.
+
+-----
+\<div align="center"\>
+\<h1 align="center"\>Face-Recognition-System🧠👁️\</h1\>
+\<h3\>Advanced Real-Time Biometric Face Recognition System\</h3\>
+\</div\>
+
+\<p align="center"\>
+An integrated project combining the power of Deep Learning with futuristic Sci-Fi HUD design for instant and visually stunning facial recognition and identity verification.
+\</p\>
+
+-----
+
+## 📖 Overview and Project Specifications
+
+This project is a security and identification system based on Computer Vision and Deep Neural Networks. The system detects faces via webcam, converts facial features into numerical vectors (Embeddings) using the **EfficientNetV2M** architecture, and compares them against registered individuals in the database.
+
+**Key Technical Specifications:**
+
+  * **Real-Time Recognition:** Ultra-fast video frame processing using a `PyTorch` model (`best_model.pth`).
+  * **Face Detection:** Utilizing Haar Cascade classifiers to crop target faces.
+  * **Biometric Embedding Generation:** Using `TensorFlow / Keras` to transform thousands of images into precise vectors.
+  * **Futuristic HUD Interface:** Built with `PyQt6`, featuring Biometric Grids, Particle Simulations, and a Live Terminal.
+
+-----
+
+## 📂 Project Structure and File Functions
+
+To understand the workflow, here is a summary of the core files in operational order:
+
+1.  **`taking_photos.py` (Start Point):** Data collection script (captures 2500 images).
+2.  **`model.py` (Local Training):** Script to train the neural network and produce `my_face_model.keras`.
+3.  **`colab_training_code.py`:** Cloud training alternatives for Google Colab.
+4.  **`generate_all_embeddings.py` (Digital Encoding):** Iterates through images to create `.npy` biometric fingerprint files.
+5.  **`main_app.py` (End Point):** The main GUI core that runs the live camera for identity verification.
+
+-----
+
+## 🚀 Comprehensive Setup Guide
+
+### Step 1: Environment Setup
+
+Install the necessary dependencies using:
+
 ```bash
-python generate_all_embeddings.py
+pip install -r requirements.txt
 ```
-سيقوم هذا السكربت بتحليل الصور الموجودة وحفظ بصمتك في مجلد `embeddings/`.
 
-### الخطوة 4: تشغيل نظام القيادة المركزي (Run the System)
-الآن أصبح كل شيء جاهزاً. قم بتشغيل الواجهة السايبرية المتقدمة:
-```bash
-python الواجهه.py
-```
-قف أمام الكاميرا، وسترى النظام يحلل التضاريس الحيوية لوجهك، وإذا تطابقت مع البصمة المسجلة ستظهر حالة **"مصرح بالدخول"** باللون الأخضر النيون.
+### Step 2: Face Enrollment (Data Collection)
 
----
+Run `taking_photos.py`, enter your name, and let the system capture 2500 images. Move slowly and change expressions for better accuracy.
 
-## 📝 ملاحظات إضافية والتطوير المستمر
-*   **حجم البيانات:** تم إعداد ملف `.gitignore` لمنع رفع مجلدات الصور `dataset` والأوزان الضخمة (`.pth`, `.keras`, `.zip`) إلى مستودع GitHub اختصاراً للوقت والتزاماً بحدود المساحة 100 ميجابايت.
-*   **تحسين الدقة:** يمكن إعادة تدريب النموذج عن طريق `model.py` في حال إضافة أشخاص كثر إلى قاعدة البيانات لضمان دقة النظام. 
-*   للكمبيوترات الضعيفة، يُنصح بتشغيل التدريب عبر ملف `colab_training_notebook.ipynb` المرفق مع المشروع.
+### Step 3: Model Training
+
+Run `model.py` for local training or use the provided Colab files for cloud training to generate the model weights.
+
+### Step 4: Generate Biometric Embeddings
+
+Run `generate_all_embeddings.py` to convert images into mathematical data stored in the `embeddings/` folder.
+
+### Step 5: Final Execution
+
+Run `main_app.py` to launch the **NEURAL NEXUS** interface and start live recognition.
+
+-----
+
+## 🛠 Troubleshooting
+
+  * **Camera Error:** Ensure no other app is using the webcam.
+  * **Missing Model:** If `best_model.pth` is missing, you must run the training script or download it manually.
+  * **Slow Recognition:** This is expected on systems without GPU acceleration due to the heavy VFX processing.
+
+-----
