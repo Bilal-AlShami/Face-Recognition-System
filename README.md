@@ -43,8 +43,8 @@
 
 1. **`taking_photos.py`:** سكربت جمع البيانات؛ يلتقط 2500 صورة لوجه المستخدم ويحفظها في مجلد `dataset/`.
     
-2. **`local_model_trining.py`:** سكربت التدريب المحلي لإنتاج نموذج `my_face_model.keras`.
-    
+2. **`local_model_trining.py`:** سكربت التدريب المحلي لإنتاج نموذج `best_model.pt`.
+   
 3. **`embeddings.py`:** المحرك الذي يحول الصور إلى ملفات بصمة رقمية `.npy`.
     
 4. **`main_app.py`:** قلب المشروع؛ الواجهة الرسومية التي تدير الكاميرا الحية وعملية المطابقة.
@@ -133,8 +133,8 @@ This project is a security and identification system based on Computer Vision an
 
 1. **`taking_photos.py`:** Data collection script; captures 2500 images per person.
     
-2. **`local_model_trining.py`:** Local training script for creating the `.keras` model.
-    
+2. **`local_model_trining.py`:** Local training script for creating the `.pt` model.pt
+   
 3. **`generate_all_embeddings.py`:** The engine that transforms images into `.npy` biometric fingerprints.
     
 4. **`main_app.py`:** The main GUI core that handles live recognition and the visual interface.
